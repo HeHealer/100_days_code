@@ -1,6 +1,6 @@
 //Q35: Write a program to print all factors of a given number.
 
-#include <stdio.h>
+#include<stdio.h>
 int main(){
     int n,i;
     printf("Enter a positive number: ");
@@ -10,5 +10,5 @@ int main(){
         if(n%i==0)
         printf("%d",i);
     }
-    printf("Factors of %d are:\n", n);
+    printf("Factors of %d are:\n",n);
 }

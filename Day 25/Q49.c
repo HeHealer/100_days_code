@@ -5,14 +5,15 @@
 2345
 */
 
-#include <stdio.h>
-int main() {
-    int i, j, n = 5;
-    for (i = n; i >= 1; i--)
+
+#include<stdio.h>
+int main(){
+    int i,j,n=5;
+    for(i=n;i>=1;i--)
     {
-        for (j = i; j <= n; j++)
+        for(j=i;j<=n;j++)
         {
-            printf("%d", j);
+            printf("%d",j);
         }
         printf("\n");
     }
