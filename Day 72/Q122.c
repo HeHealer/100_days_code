@@ -1,0 +1,18 @@
+//Q122: Write a C program that opens an existing file (e.g., info.txt) and reads its contents using fgets(). The program should print all the lines to the console until EOF (end of file) is reached.
+
+#include<stdio.h>
+int main(){
+    char str[1000];
+    FILE *fp;
+    fp=fopen("info.txt","r");
+    if(fp==NULL)
+    {
+        printf("ERROR");
+        return 1;
+    }
+    while (fgets(str,sizeof(str),fp)!=NULL)
+    {
+        printf("%s",str);
+    }
+    fclose(fp);
+}
